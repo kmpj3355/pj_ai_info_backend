@@ -1,5 +1,5 @@
 server:
-  port: 3000
+  port: 7000
 
 spring:
   #데이터베이스 설정
@@ -28,16 +28,6 @@ logging:
     org.hibernate.type: trace
     org.hibernate.orm.jdbc.bind: trace
 
-# 유레카 설정
-eureka:
-  instance:
-    hostname: ${hostname}
-    #preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: ${eurekaHost}/eureka/
 
 
 # 액추에이터 설정
@@ -60,8 +50,9 @@ jwt:
 
 cors:
   allow:
-    origins: 'http://localhost:7000,http://localhost:7001
-
+    origins:
+      - http://localhost:7000
+      - http://localhost:7001
 
 springdoc:
   version: '1.0.0'

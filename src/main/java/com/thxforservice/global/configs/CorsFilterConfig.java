@@ -15,7 +15,7 @@ import java.util.List;
 public class CorsFilterConfig {
 
 
-    @Value("${cors.allow.origins}")
+    @Value("${cors.allow.origins:defaultOrigin}")
     private String allowedOrigins;
 
     // Cors 관련 헤더 - 응답 헤더 추가
@@ -31,7 +31,8 @@ public class CorsFilterConfig {
             config.setAllowedOrigins(origins);
             config.setAllowCredentials(true);
         } else {
-            config.addAllowedOrigin("*");
+          //  config.addAllowedOrigin("http://localhost:7000");
+          config.addAllowedOrigin("*");
         }
         config.addExposedHeader("*");
 
