@@ -34,7 +34,7 @@ import java.util.List;
 
 @Tag(name = "Member", description = "회원 인증 API")
 @RestController
-@RequestMapping("/account")
+@RequestMapping("/api/account")
 @RequiredArgsConstructor
 public class MemberController {
 

@@ -21,7 +21,7 @@ import java.util.Locale;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/member")
+@RequestMapping("/api/member")
 public class MemberAdminController {
 
     private final MemberAdminService service;

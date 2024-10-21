@@ -55,7 +55,6 @@ cors:
       - http://localhost:7001
 
 springdoc:
-  version: '1.0.0'
   api-docs:
     path: /api-docs
   default-consumes-media-type: application/json
