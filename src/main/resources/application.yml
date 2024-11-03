@@ -66,3 +66,7 @@ springdoc:
     disable-swagger-default-url: true
   paths-to-match:
     - /**
+
+huggingface:
+  api:
+    key: YOUR_HUGGING_FACE_API_KEY
